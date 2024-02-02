@@ -1,8 +1,9 @@
-#REMOVE PASS AND FIX THE FUNCTION
-#change to test push and forks
 def sum_of_products(list1, list2):
-    pass
-
-if __name__ == '__main__':
-   #REMOVE PASS AND YOUR CODE GOES HERE
-    pass
+    if len(list1) != len(list2):
+        return "Error: Lists must be the same length." 
+    result = sum(x * y for x, y in zip(list1, list2))
+    return result
+list1 = list(map(int, input("Enter the first series of integers: ")))
+list2 = list(map(int, input("Enter the second series of integers: ")))
+output = sum_of_products(list1, list2)
+print("Output =", output)
