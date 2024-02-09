@@ -7,3 +7,4 @@ list1 = list(map(int, input().split()))
 list2 = list(map(int, input().split()))
 output = sum_of_products(list1, list2)
 print("Output =", output)
+#test
