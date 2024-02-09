@@ -7,8 +7,8 @@ def sum_of_products(series1, series2):
 
 if __name__ == "__main__":
     try:
-        series1 = list(map(int, input("Enter the first series of integers separated by space: ").split()))
-        series2 = list(map(int, input("Enter the second series of integers separated by space: ").split()))
+        series1 = list(map(int, input().split()))
+        series2 = list(map(int, input().split()))
         result = sum_of_products(series1, series2)
         print(result)
     except ValueError:
